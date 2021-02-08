@@ -103,7 +103,7 @@ img {
   margin-left: 92px;
 }
 
-.site-nav .link {
+.site-nav .link , .contact .link{
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -128,7 +128,6 @@ img {
 }
 
 .contact .link {
-  font-weight: 500;
   color: #757575;
 }
 
