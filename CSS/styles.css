@@ -58,10 +58,6 @@ img {
   outline: none;
 }
 
-.link.current {
-  color: var(--accent-color);
-}
-
 .container {
   width: 1200px;
   margin-left: auto;
@@ -115,6 +111,10 @@ img {
 
 .site-nav .link:hover,
 .site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.link.current {
   color: var(--accent-color);
 }
 
@@ -281,6 +281,10 @@ img {
 }
 
 /*  portfolio */
+
+.portfolio {
+  padding-bottom: 94px;
+}
 
 .portfolio-nav > .item:not(:first-child) {
   margin-left: 8px;
