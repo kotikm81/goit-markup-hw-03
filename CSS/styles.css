@@ -70,6 +70,10 @@ img {
   padding-right: 15px;
 }
 
+.header {
+  border-bottom: 1px #ECECEC solid;
+}
+
 .main-nav {
   display: flex;
   align-items: center;
