@@ -5,6 +5,7 @@
   --primary-white-color: #ffffff;
   --secondary-background-color: #F5F4FA;
   --dark-background-color: #2F303A;
+  --set-gap: 30px;
 }
 
 html {
@@ -40,14 +41,16 @@ body {
   overflow: hidden;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .list {
   padding: 0;
   margin: 0;
   list-style: none;
-}
-
-.list img {
-  display: block;
 }
 
 .link {
@@ -163,12 +166,10 @@ body {
 
 .section {
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .work {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 94px;
 }
 
 .section-title {
@@ -183,10 +184,18 @@ body {
 
 .flex-list {
   display: flex;
+  margin-left: calc(-1 * var(--set-gap));
 }
 
-.flex-list > .item:not(:last-child){
-  margin-right: 30px;
+.flex-list > .item {
+  flex-basis: calc((100% - 3 * var(--set-gap)) / 3);
+  margin-left: var(--set-gap);
+}
+
+.team .flex-list > .item, .feature .flex-list > .item {
+  flex-basis: calc((100% - 4 * var(--set-gap)) / 4);
+  background-color: var(--primary-white-color);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .feature-title {
@@ -205,17 +214,18 @@ body {
   line-height: 1.71;
 }
 
-.team{
+.team {
   padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--secondary-background-color);
 }
 
-.team .flex-list {
-  padding-bottom: 30px;
+.team-content {
+  padding-top: 30px;
 }
 
 .team-title {
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 10px;  
   font-weight: 500;
   font-size: 16px;
@@ -287,23 +297,29 @@ body {
   margin-bottom: 50px;
 }
 
-.portfolio-main {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
+.portfolio-card {
+  border: 1px #eeeeee solid;
 }
 
-.portfolio-main > .item {
-  width: 370px;
-  padding-bottom: 20px;
-  margin: 15px;
+.portfolio-card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--set-gap));
+  margin-top: calc(-1 * var(--set-gap));
+}
+
+.portfolio-card-set > .item {
+  flex-basis: calc((100% - 3 * var(--set-gap)) / 3);
+  margin-left: var(--set-gap);
+  margin-top: var(--set-gap);
+}
+
+.portfolio-card-content {
+  padding: 20px 24px 20px 24px;
 }
 
 .portfolio-title {
-  margin-top: 20px;
-  margin-bottom: 4px;
-  margin-left: 24px;
-  margin-right: 24px;
+  margin: 0 0 4px 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -312,7 +328,7 @@ body {
 }
 
 .portfolio-text {
-  margin: 0 24px 0 24px;
+  margin: 0;
   font-size: 16px;
   line-height: 1.88;
   color: var(--primary-text-color);
@@ -323,4 +339,3 @@ body {
   line-height: 1.56;
   color: var(--primary-white-color);
 }
-
