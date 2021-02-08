@@ -79,7 +79,7 @@ img {
   font-weight: 700;
   font-size: 26px;
   font-family: "Raleway", sans-serif;
-  line-height: 1.17;
+  line-height: 1.19;
   letter-spacing: 0.03px;
   color: var(--accent-color);
   text-decoration: none;
@@ -96,7 +96,7 @@ img {
 
 .site-nav {
   display: flex;
-  margin-left: 92px;
+  margin-left: 93px;
 }
 
 .site-nav .link , .contact .link{
