@@ -114,8 +114,8 @@ img {
   color: var(--accent-color);
 }
 
-.site-nav > .item:not(:last-child), .contact > .item:not(:last-child) {
-  margin-right: 50px;
+.site-nav > .item:not(:first-child), .contact > .item:not(:first-child) {
+  margin-left: 50px;
 }
 
 .contact  {
@@ -140,7 +140,7 @@ img {
 
 .hero-title {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -164,6 +164,10 @@ img {
   border-radius: 4px;
 }
 
+.hero .button {
+  margin-top: 30px;
+}
+
 .section {
   padding-top: 94px;
 }
@@ -174,7 +178,7 @@ img {
 
 .section-title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -182,25 +186,29 @@ img {
   color: var(--title-text-color);
 }
 
-.flex-list {
+.feature-list, .work-list,  .team-list{
   display: flex;
   margin-left: calc(-1 * var(--set-gap));
 }
 
-.flex-list > .item {
+.feature-list > .item,  .work-list > .item, .team-list > .item{
   flex-basis: calc((100% - 3 * var(--set-gap)) / 3);
   margin-left: var(--set-gap);
 }
 
-.team .flex-list > .item, .feature .flex-list > .item {
+.team-list > .item, .feature-list > .item {
   flex-basis: calc((100% - 4 * var(--set-gap)) / 4);
   background-color: var(--primary-white-color);
   border-radius: 0px 0px 4px 4px;
 }
 
+.work-list, .team-list {
+  margin-top: 50px;
+}
+
 .feature-title {
   margin-top: 0;
-  margin-bottom: 10px;  
+  margin-bottom: 0;  
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -209,7 +217,7 @@ img {
 }
 
 .text {
-  margin-top: 0;
+  margin-top: 10px;
   margin-bottom: 0;
   line-height: 1.71;
 }
@@ -227,7 +235,7 @@ img {
 
 .team-title {
   margin-top: 0;
-  margin-bottom: 10px;  
+  margin-bottom: 0;  
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -236,7 +244,7 @@ img {
 }
 
 .team-text {
-  margin-top: 0;
+  margin-top: 10px;
   margin-bottom: 0;
   font-size: 16px;
   line-height: 1.19;
@@ -265,14 +273,14 @@ img {
   margin-top: 20px;
 }
 
-.footer .item:not(:last-child) {
-  margin-bottom: 9px;
+.footer .item:not(:first-child) {
+  margin-top: 9px;
 }
 
 /*  portfolio */
 
-.portfolio-nav > .item:not(:last-child) {
-  margin-right: 8px;
+.portfolio-nav > .item:not(:first-child) {
+  margin-left: 8px;
 }
 
 .portfolio .button {
