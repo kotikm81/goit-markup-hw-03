@@ -76,6 +76,8 @@ img {
 }
 
 .logo {
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-weight: 700;
   font-size: 26px;
   font-family: "Raleway", sans-serif;
@@ -90,7 +92,7 @@ img {
   color: #000000;
 }
 
-.footer .logo span {
+.logo .accent-logo {
   color: var(--primary-white-color);
 }
 
@@ -170,6 +172,12 @@ img {
 .hero .button {
   margin-top: 30px;
 }
+
+.hero {
+  padding: 200px;
+  padding-bottom: 200px;
+}
+
 
 .section {
   padding-top: 94px;
@@ -314,9 +322,9 @@ img {
   margin-bottom: 50px;
 }
 
-.portfolio-card {
+/* .portfolio-card {
   border: 1px #eeeeee solid;
-}
+} */
 
 .portfolio-card-set {
   display: flex;
@@ -333,6 +341,9 @@ img {
 
 .portfolio-card-content {
   padding: 20px 24px 20px 24px;
+  border-left: 1px #eeeeee solid;
+  border-right: 1px #eeeeee solid;
+  border-bottom: 1px #eeeeee solid;
 }
 
 .portfolio-title {
