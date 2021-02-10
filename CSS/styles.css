@@ -204,12 +204,12 @@ img {
 }
 
 .feature-list > .item,  .work-list > .item, .team-list > .item{
-  flex-basis: calc((100% - 3 * var(--set-gap)) / 3);
+  flex-basis: calc(100% / 3 - var(--set-gap));
   margin-left: var(--set-gap);
 }
 
 .team-list > .item, .feature-list > .item {
-  flex-basis: calc((100% - 4 * var(--set-gap)) / 4);
+  flex-basis: calc(100% / 4 - var(--set-gap));
   background-color: var(--primary-white-color);
   border-radius: 0px 0px 4px 4px;
 }
@@ -334,7 +334,7 @@ img {
 }
 
 .portfolio-card-set > .item {
-  flex-basis: calc((100% - 3 * var(--set-gap)) / 3);
+  flex-basis: calc(100% / 3 - var(--set-gap));
   margin-left: var(--set-gap);
   margin-top: var(--set-gap);
 }
