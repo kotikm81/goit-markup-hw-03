@@ -70,6 +70,12 @@ img {
   border-bottom: 1px #ECECEC solid;
 }
 
+.container-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -126,7 +132,6 @@ img {
 
 .contact  {
   display: flex;
-  margin-left: auto;
 }
 
 .contact .link {
